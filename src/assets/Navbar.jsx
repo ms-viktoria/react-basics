@@ -5,11 +5,7 @@ const Navbar = () => {
     <h1>The Dojo Blog</h1>
     <div className="links">
     <a href="/">Home</a>
-    <a href="/create" style={{
-      color: 'white',
-      backgroundColor: '#F1356b', 
-      borderRadius: '8px'
-    }}>New blog</a>
+    <a href="/create">New blog</a>
     </div>
     </nav>
     </>
