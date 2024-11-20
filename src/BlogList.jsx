@@ -1,6 +1,11 @@
 import { Link } from 'react-router-dom';
 
-const BlogList = ({ blogs }) => {
+const BlogList = ({ blogs = [] }) => {
+
+  
+  if (!blogs.length) {
+    return <p>No blogs to display.</p>;
+  } 
   return (
     <div className="blog-list">
       {blogs.map((blog) => (
@@ -11,8 +16,9 @@ const BlogList = ({ blogs }) => {
           </Link>
         </div>
       ))}
-    </div>
+     </div>
   );
 };
+
 
 export default BlogList;
